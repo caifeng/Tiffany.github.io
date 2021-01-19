@@ -4,16 +4,17 @@
 
 # Site
 title: 随手笔记
-subtitle: ''
+subtitle: '日出而作，日入而息，逍遥于天地之间，而心意自得'
 description: ''
 keywords:
-author: caifeng
-language: en
+author: 柚子
+avatar: https://avatars2.githubusercontent.com/u/1281595?s=400&u=a205df7db8636a73780a1ba5bc4a80b56481143c&v=4
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://caifeng.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,7 +99,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

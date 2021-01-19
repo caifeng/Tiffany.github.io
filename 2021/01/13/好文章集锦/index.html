@@ -1,222 +1,408 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>好文章集锦 | 随手笔记</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="clean-code-typescripthttps:&#x2F;&#x2F;github.com&#x2F;labs42io&#x2F;clean-code-typescript">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"caifeng.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="clean-code-typescripthttps:&#x2F;&#x2F;github.com&#x2F;labs42io&#x2F;clean-code-typescript https:&#x2F;&#x2F;lea.verou.me&#x2F;projects&#x2F; You-need-to-know-csshttps:&#x2F;&#x2F;lhammer.cn&#x2F;You-need-to-know-css&#x2F;#&#x2F;zh-cn&#x2F;one-pixel-line SassSass 是一种 CS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="好文章集锦">
-<meta property="og:url" content="http://example.com/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/index.html">
+<meta property="og:url" content="http://caifeng.github.io/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/index.html">
 <meta property="og:site_name" content="随手笔记">
-<meta property="og:description" content="clean-code-typescripthttps:&#x2F;&#x2F;github.com&#x2F;labs42io&#x2F;clean-code-typescript">
-<meta property="og:locale" content="en_US">
+<meta property="og:description" content="clean-code-typescripthttps:&#x2F;&#x2F;github.com&#x2F;labs42io&#x2F;clean-code-typescript https:&#x2F;&#x2F;lea.verou.me&#x2F;projects&#x2F; You-need-to-know-csshttps:&#x2F;&#x2F;lhammer.cn&#x2F;You-need-to-know-css&#x2F;#&#x2F;zh-cn&#x2F;one-pixel-line SassSass 是一种 CS">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-13T01:24:08.000Z">
-<meta property="article:modified_time" content="2021-01-13T01:39:13.957Z">
-<meta property="article:author" content="caifeng">
+<meta property="article:modified_time" content="2021-01-19T02:20:51.748Z">
+<meta property="article:author" content="柚子">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="随手笔记" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="canonical" href="http://caifeng.github.io/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-<meta name="generator" content="Hexo 5.3.0"></head>
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">随手笔记</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+  <title>好文章集锦 | 随手笔记</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
-</header>
 
-      <div class="outer">
-        <section id="main"><article id="post-好文章集锦" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/" class="article-date">
-  <time class="dt-published" datetime="2021-01-13T01:24:08.000Z" itemprop="datePublished">2021-01-13</time>
-</a>
-    
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">随手笔记</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">日出而作，日入而息，逍遥于天地之间，而心意自得</p>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      好文章集锦
-    </h1>
-  
 
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://caifeng.github.io/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/1281595?s=400&u=a205df7db8636a73780a1ba5bc4a80b56481143c&v=4">
+      <meta itemprop="name" content="柚子">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          好文章集锦
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-13 09:24:08" itemprop="dateCreated datePublished" datetime="2021-01-13T09:24:08+08:00">2021-01-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-19 10:20:51" itemprop="dateModified" datetime="2021-01-19T10:20:51+08:00">2021-01-19</time>
+              </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
         <h3 id="clean-code-typescript"><a href="#clean-code-typescript" class="headerlink" title="clean-code-typescript"></a>clean-code-typescript</h3><p><a target="_blank" rel="noopener" href="https://github.com/labs42io/clean-code-typescript">https://github.com/labs42io/clean-code-typescript</a></p>
+<p><a target="_blank" rel="noopener" href="https://lea.verou.me/projects/">https://lea.verou.me/projects/</a></p>
+<h3 id="You-need-to-know-css"><a href="#You-need-to-know-css" class="headerlink" title="You-need-to-know-css"></a>You-need-to-know-css</h3><p><a target="_blank" rel="noopener" href="https://lhammer.cn/You-need-to-know-css/#/zh-cn/one-pixel-line">https://lhammer.cn/You-need-to-know-css/#/zh-cn/one-pixel-line</a></p>
+<h3 id="Sass"><a href="#Sass" class="headerlink" title="Sass"></a>Sass</h3><p>Sass 是一种 CSS 的预编译语言，Sass 为 CSS 赋予了更强大的功能。</p>
+<p>它提供了 变量（variables）、嵌套（nested rules） [混合（mixins）、函数（functions）等功能，并且完全兼容 CSS 语法。</p>
+<p>Sass 能够帮助复杂的样式表更有条理， 并且易于在项目内部或跨项目共享设计。</p>
+<p><a target="_blank" rel="noopener" href="https://sass.bootcss.com/documentation">https://sass.bootcss.com/documentation</a></p>
+<h3 id="npm包对比"><a href="#npm包对比" class="headerlink" title="npm包对比"></a>npm包对比</h3><p><a target="_blank" rel="noopener" href="https://moiva.io/">https://moiva.io/</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/TXBRUVoOBDxr8P9Iw5FpTQ">https://mp.weixin.qq.com/s/TXBRUVoOBDxr8P9Iw5FpTQ</a></p>
+<h3 id="动画网站"><a href="#动画网站" class="headerlink" title="动画网站"></a>动画网站</h3><p><a target="_blank" rel="noopener" href="http://navnav.co/">http://navnav.co/</a></p>
+<h3 id="Python-IDE"><a href="#Python-IDE" class="headerlink" title="Python IDE"></a>Python IDE</h3><p><a target="_blank" rel="noopener" href="https://thonny.org/">https://thonny.org/</a></p>
+<h3 id="hexo-实时运行"><a href="#hexo-实时运行" class="headerlink" title="hexo 实时运行"></a>hexo 实时运行</h3><p><a target="_blank" rel="noopener" href="https://mecono.cn/2425951001.html">https://mecono.cn/2425951001.html</a></p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/" data-id="ckjuv4hdb0000ultqbk850m6k" data-title="好文章集锦" class="article-share-link">Share</a>
-      
-      
-      
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/12/%E5%B8%B8%E7%94%A8TS/" rel="prev" title="常用TS">
+      <i class="fa fa-chevron-left"></i> 常用TS
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/01/13/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA&%E9%AB%98%E4%BA%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" rel="next" title="文本溢出&高亮解决方案">
+      文本溢出&高亮解决方案 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#clean-code-typescript"><span class="nav-number">1.</span> <span class="nav-text">clean-code-typescript</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#You-need-to-know-css"><span class="nav-number">2.</span> <span class="nav-text">You-need-to-know-css</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sass"><span class="nav-number">3.</span> <span class="nav-text">Sass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm%E5%8C%85%E5%AF%B9%E6%AF%94"><span class="nav-number">4.</span> <span class="nav-text">npm包对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E7%94%BB%E7%BD%91%E7%AB%99"><span class="nav-number">5.</span> <span class="nav-text">动画网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-IDE"><span class="nav-number">6.</span> <span class="nav-text">Python IDE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-%E5%AE%9E%E6%97%B6%E8%BF%90%E8%A1%8C"><span class="nav-number">7.</span> <span class="nav-text">hexo 实时运行</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="柚子"
+      src="https://avatars2.githubusercontent.com/u/1281595?s=400&u=a205df7db8636a73780a1ba5bc4a80b56481143c&v=4">
+  <p class="site-author-name" itemprop="name">柚子</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">柚子</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2021/01/13/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA&%E9%AB%98%E4%BA%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          文本溢出&amp;高亮解决方案
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2021/01/12/%E5%B8%B8%E7%94%A8TS/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">常用TS</div>
-    </a>
-  
-</nav>
 
   
-</article>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
-    </div>
-  </div>
+<script src="/js/schemes/pisces.js"></script>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/01/13/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA&%E9%AB%98%E4%BA%AE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">文本溢出&amp;高亮解决方案</a>
-          </li>
-        
-          <li>
-            <a href="/2021/01/13/%E5%A5%BD%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/">好文章集锦</a>
-          </li>
-        
-          <li>
-            <a href="/2021/01/12/%E5%B8%B8%E7%94%A8TS/">常用TS</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<script src="/js/next-boot.js"></script>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 caifeng<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>
